@@ -64,7 +64,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"folderPath": "source1",
+						"folderPath": "source1,source2",
 						"fileSystem": "landing"
 					},
 					"columnDelimiter": ",",
