@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFforRnD"
+		},
+		"RnDLinkedService_accountKey": {
+			"value": ""
+		},
+		"RnDLinkedService_properties_typeProperties_url": {
+			"value": "https://assignmentstorage.dfs.core.windows.net/"
+		},
+		"txtTrigger_properties_pipeline1_parameters_fileNamePL": {
+			"value": "@triggerBody().fileName"
+		},
+		"txtTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/17f2feed-5092-4082-b09c-9e3cb2777443/resourceGroups/assignment_DataLake/providers/Microsoft.Storage/storageAccounts/assignmentstorage"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
