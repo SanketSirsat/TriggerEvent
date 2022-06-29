@@ -1,0 +1,27 @@
+{
+	"name": "txtTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"fileNamePL": "@triggerBody().fileName"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/landing/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/17f2feed-5092-4082-b09c-9e3cb2777443/resourceGroups/assignment_DataLake/providers/Microsoft.Storage/storageAccounts/assignmentstorage",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
