@@ -12,6 +12,12 @@
 				"parameters": {
 					"fileNamePL": "@triggerBody().fileName"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "main",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "BlobEventsTrigger",

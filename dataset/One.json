@@ -1,27 +1,20 @@
 {
-	"name": "outputTrigger",
+	"name": "One",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "RnDLinkedService",
 			"type": "LinkedServiceReference"
-		},
-		"parameters": {
-			"folder": {
-				"type": "string"
-			},
-			"file": {
-				"type": "string"
-			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileSystem": "raw"
+				"fileSystem": "landing"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
