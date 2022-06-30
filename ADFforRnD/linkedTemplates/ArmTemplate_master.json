@@ -15,10 +15,6 @@
 			"type": "string",
 			"defaultValue": "https://assignmentstorage.dfs.core.windows.net/"
 		},
-		"txtTrigger_properties_pipeline1_parameters_fileNamePL": {
-			"type": "string",
-			"defaultValue": "@triggerBody().fileName"
-		},
 		"txtTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/17f2feed-5092-4082-b09c-9e3cb2777443/resourceGroups/assignment_DataLake/providers/Microsoft.Storage/storageAccounts/assignmentstorage"
@@ -55,9 +51,6 @@
 					},
 					"RnDLinkedService_properties_typeProperties_url": {
 						"value": "[parameters('RnDLinkedService_properties_typeProperties_url')]"
-					},
-					"txtTrigger_properties_pipeline1_parameters_fileNamePL": {
-						"value": "[parameters('txtTrigger_properties_pipeline1_parameters_fileNamePL')]"
 					},
 					"txtTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('txtTrigger_properties_typeProperties_scope')]"
